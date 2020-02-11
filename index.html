@@ -3,18 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Profile of Gabriel Luiz</title>
+        
     </head>
     <body>
-        <style>
-            body {
-            background-image: url('https://i.pinimg.com/originals/e2/8d/61/e28d61b0ce1b686bbd9c19b98912101f.gif') no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-color: black;
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/376f3a44e9.js" crossorigin="anonymous"></script>
+               <link rel="stylesheet" href="./infinite.css">  
+        <style> 
+            section {
+            background: black;
             color: white;
+            border-radius: 1em;
+            padding: 1em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) ;
+            }
+            body {
+            /*background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Download-Animated-Matrix-Image.jpg');*/
+            color: white;
+            background-color: grey;
             text-align: center;
+            animation: alertPulse 3s ease-out;
+            animation-iteration-count: infinite;
+            /*opacity: 1;*/
             }
             a:link, a:visited {
             text-decoration: underline; 
@@ -30,6 +48,7 @@
             }
             #my-photo{
                 border-radius: 100%;
+                border: 4px ridge green;
             }
             h1{
             text-shadow:2px 2px 2px black;
@@ -37,29 +56,39 @@
             font-family: Helvetica, Arial,  sans-serif;
             font-size: 32px;
             font-weight:bold;
-            text-decoration: underline;
+            }
+            h1:hover {
+            text-decoration: underline; 
+            color: green
             }
             h2{
             font: normal;
             font-weight: normal;
             text-shadow:2px 2px 2px black;
             }
+            i {
+                font-size: 50px;
+                margin: 5px;
+            }
+ 
         </style>
-
+        <section>
     
         <h1><em>Gabriel Luiz da Silva</em></h1>
         <p><img id="my-photo" alt="Foto de Gabriel" src="https://avatars1.githubusercontent.com/u/58389773?s=460&v=4" width="220">    </p>
+        <h2><p><b>Desenvolvedor de sistemas</b> e Chef de cozinha.</p></h2>
         <h2><p>Brasileiro, nascido em Florianópolis - SC no ano de 1985. </p></h2>
-        <h2><p><b>Desenvolvedor</b> e Chef de cozinha.</p></h2>
-        <br><br>
+        
+          
         <h3><a href="/skills.html" target="_self">Skills</a>  |  <a href="/contato.html" target="_self">Contato</a></h3>
         
-        <br><br>
+          
 
-        <a href="#my-photo">Ver foto</a><br>
-        <a href="https://github.com/gitgabrielluiz">Ver github</a>
-        <br>   
+        <a href="https://github.com/gitgabrielluiz" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/gabriel-luiz-da-silva-tec/" target="_blank"><i class="fab fa-linkedin"></i></a>  
+        <a href="https://www.instagram.com/gabriellsilva/" target="_blank"><i class="fab fa-instagram-square"></i></a>
         </p>
+    </section>
         
     </body>
 </html>
