@@ -8,18 +8,88 @@
   </head>
   <body>
     <script>
-      let peça = "Bispo";
-      let peçaLower = peça.toLowerCase();
-      let cavalo = "Anda em L, 3 para um lado e 1 para o outro";
-      let bispo = "Anda em Diagonal";
+      //  window.alert('Minha primeira mensagem')
+      //  window.confirm("Esta gostando de JS?")
+      // let nunOfRandons = window.prompt("quantos randons voce quer?");
+      // let nota = window.prompt("qual foi a sua nota ?");
+      // let notaLetra = "Y";
+      // ****FOR E ARRAY
+      //       let sacola = [
+      //         ["feijao", 1],
+      //         ["arroz", 2],
+      //         ["linguiça", 4]
+      //       ];
 
-      if (peçaLower == "bispo") {
-        console.log(bispo);
-      } else {
-        console.log("erro");
+      //       for (i = 0; i < 3; i++) {
+      //         for (q = 0; q < 2; q++) {
+      //           console.log(sacola[i][q] + "  ");
+      //         }
+      //         console.log(" / ");
+      //       }
+
+      // function transformarNota(xxx) {
+
+
+      //**** 8 - SE ALGUM RANDOM FOR PAR, RETORNAR "TRUE"  
+      let quantidade = window.prompt("numero de loops ?");
+      let arrayNumeros = [];
+      for (i = 0; i < quantidade; i++) {
+        let random = Math.round(Math.random((99))*100);
+        arrayNumeros[i] = random;
+        console.log(arrayNumeros[i]);
       }
+      for(i=0; i<arrayNumeros.length; i++){
+        if(arrayNumeros[i]%2 !== 0){
+          
+        }else{
+          console.log("true");
+        }
+      }
+      document.write(arrayNumeros)
 
-      console.log("aaa");
+
+      // document.write(
+      //   `Ola, ${nome}! Seu nome tem ${nome.length} letras e sua nota ${nota} equivale a uma nota: ${xxx}. `
+      // );
+
+      // ****IMPUT NOTA NUMERICA E OUTPUT NOTA EM LETRA
+      // //  window.alert('Minha primeira mensagem')
+      // //  window.confirm("Esta gostando de JS?")
+      // let nome = window.prompt("qual o seu nome ?");
+      // let nota = window.prompt("qual foi a sua nota ?");
+      // let notaLetra = "Y";
+
+      // function transformarNota(notaNumero) {
+      //   if (notaNumero >= 90) {
+      //     return "A";
+      //   } else if (notaNumero >= 80) {
+      //     return "B";
+      //   } else if (notaNumero >= 70) {
+      //     return "C";
+      //   } else if (notaNumero >= 60) {
+      //     return "D";
+      //   } else {
+      //     return "erro";
+      //   }
+      // }
+      // let xxx = transformarNota(nota);
+
+      // document.write(
+      //   `Ola, ${nome}! Seu nome tem ${nome.length} letras e sua nota ${nota} equivale a uma nota: ${xxx}. `
+      // );
+
+      //   let peça = "Bispo";
+      //   let peçaLower = peça.toLowerCase();
+      //   let cavalo = "Anda em L, 3 para um lado e 1 para o outro";
+      //   let bispo = "Anda em Diagonal";
+
+      //   if (peçaLower == "bispo") {
+      //     console.log(bispo);
+      //   } else {
+      //     console.log("erro");
+      //   }
+
+      //   console.log("aaa");
     </script>
   </body>
 </html>
