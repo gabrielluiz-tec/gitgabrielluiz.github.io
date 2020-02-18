@@ -10,28 +10,24 @@
 <script>
 
 // //****TRANFORMADOR DE NUMEROS ROMANOS
- let numeroRomano = window.prompt("Qual numero romano voce quer converter ?");
+ var numeroRomano = window.prompt("Qual numero romano voce quer converter ?");
+ var resultSoma = 0;
  arrayRomano=numeroRomano.split(" ");
  primeiroN = parseInt(arrayRomano[0]);
  segundoN = parseInt(arrayRomano[1]);
  arraySize = arrayRomano.length;
- var resultSoma = 0;
 
     function verificaMenor(N1, N2, ASize) {
-
         if (ASize <= 2 && N1 < N2) {
             return  console.log(N2-N1);
-
         }else{
            for(i=0; i<ASize; i++){
                resultSoma = resultSoma + parseInt(arrayRomano[i]);
                
            }
            return  console.log(resultSoma);
-           //return  console.log(resultSoma);
         }
     }
-
 verificaMenor(primeiroN, segundoN, arraySize);
 
 
@@ -39,8 +35,6 @@ verificaMenor(primeiroN, segundoN, arraySize);
 //  console.log(resultado11);
 //  document.write(arrayRomano[1]);
 
-
- 
 
 
 
