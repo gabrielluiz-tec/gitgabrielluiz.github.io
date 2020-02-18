@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// //****TRANFORMADOR DE NUMEROS ROMANOS
+ let numeroRomano = window.prompt("Qual numero romano voce quer converter ?");
+ arrayRomano=numeroRomano.split(" ");
+ primeiroN = parseInt(arrayRomano[0]);
+ segundoN = parseInt(arrayRomano[1]);
+ arraySize = arrayRomano.length;
+ var resultSoma = 0;
+
+    function verificaMenor(N1, N2, ASize) {
+
+        if (ASize <= 2 && N1 < N2) {
+            return  console.log(N2-N1);
+
+        }else{
+           for(i=0; i<ASize; i++){
+               resultSoma = resultSoma + parseInt(arrayRomano[i]);
+               
+           }
+           return  console.log(resultSoma);
+           //return  console.log(resultSoma);
+        }
+    }
+
+verificaMenor(primeiroN, segundoN, arraySize);
+
+
+//  document.write(arrayRomano[0] + "<br>");
+//  console.log(resultado11);
+//  document.write(arrayRomano[1]);
+
+
+ 
+
+
+
+// //****PIRAMIDE SOMENTE BORDAS
+// let baseDaPiramide = window.prompt("Qual a base da piramide ?");
+
+// for(i=baseDaPiramide; i>0; i--){
+//     let parOuImpar = baseDaPiramide%2;
+//     if (i%2 == parOuImpar){
+//             for(u=baseDaPiramide; u>i; u--){
+//                 if(u== baseDaPiramide || u==(i+1)){
+//                     document.write("*");
+//                 }else{
+//                 document.write("_");
+//                 }
+//             };
+//             document.write("<br>");
+//         let espaços = (u/2)-1
+//         for (y = 0; y < ((espaços)-1); y++) {
+//             document.write("_");
+//         };
+//     };   
+// };
+// for(footer = 1; footer<baseDaPiramide; footer++){
+//             document.write("*");
+//         }
+
+// for(i=0; i<10; i++){
+//     document.write(i);
+//     document.write("<br>");
+// }
+
+
+
+
+// //****PIRAMIDE 
+// let baseDaPiramide = window.prompt("Qual a base da piramide ?");
+
+// for(i=baseDaPiramide; i>0; i--){
+//     let parOuImpar = baseDaPiramide%2;
+//     if (i%2 == parOuImpar){
+//             for(u=baseDaPiramide; u>i; u--){
+//                 document.write("*");
+//             };
+//             document.write("<br>");
+//         let espaços = (u/2)-1
+//         for (y = 0; y < ((espaços)-1); y++) {
+//             document.write("_");
+//         };
+//     };
+// };
+
+
+
+
+
+
+
+// //****PIRAMIDE PONTA CABEÇA
+// let baseDaPiramide = window.prompt("Qual a base da piramide ?");
+
+// for(i=baseDaPiramide; i>0; i--){
+//     let parOuImpar = baseDaPiramide%2;
+//     if (i%2 == parOuImpar){
+//             for(u=0; u<i; u++){                
+//                 document.write("*");
+//             };
+//             document.write("<br>");
+//         let espaços = (baseDaPiramide - (i - 1)) / 2
+//         for (y = 0; y < espaços; y++) {
+//             document.write("_");
+//         };
+//     };
+// };
+
+</script>
+</body>
+</html>
