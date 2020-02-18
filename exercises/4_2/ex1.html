@@ -11,6 +11,34 @@
 
 
 
+//****PIRAMIDE 
+let baseDaPiramide = window.prompt("Qual a base da piramide ?");
+
+for(i=baseDaPiramide; i>0; i--){
+    let parOuImpar = baseDaPiramide%2;
+    if (i%2 == parOuImpar){
+            for(u=baseDaPiramide; u>i; u--){
+                if(u== baseDaPiramide || u==(i+1)){
+                    document.write("*");
+                }else{
+                document.write("_");
+                }
+            };
+            document.write("<br>");
+        let espaços = (u/2)-1
+        for (y = 0; y < ((espaços)-1); y++) {
+            document.write("_");
+        };
+    };   
+};
+for(footer = 1; footer<baseDaPiramide; footer++){
+            document.write("*");
+        }
+
+// for(i=0; i<10; i++){
+//     document.write(i);
+//     document.write("<br>");
+// }
 
 
 
