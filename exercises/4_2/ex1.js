@@ -1,22 +1,25 @@
+let base = 8;
+array1 = [];
 
-let baseDaPiramide = 5;
+for(i=base-1; i< base; i++){
+    for(u=base ; u>0 ; u--){
+        array1[i] += "*";
+        console.log(array1[i]);
+    }    
+}
 
-for(i=baseDaPiramide; i>0; i--){
-    let parOuImpar = baseDaPiramide%2;
-    if (i%2 == parOuImpar){
-        
-            for(u=0; u<i; u++){
-                if(i!=baseDaPiramide){
-                    let espaços = (baseDaPiramide-i)/2
-                    for(y=0; y<espaços; y++){
-                        console.log(" ");
-                    }
-                    
-                }
-                
-                console.log("*");
-            };
-            console.log("<br>");
-            
-    };
-};
+
+
+
+//     let parOuImpar = baseDaPiramide%2;
+//     if (i%2 == parOuImpar){
+//             for(u=baseDaPiramide; u>i; u--){
+//                 console.log("*");
+//             };
+//             //console.log("\n");
+//         let espaços = (u/2)-1
+//         for (y = 0; y < ((espaços)-1); y++) {
+//             console.log(" ");
+//         };
+//     };
+// };
