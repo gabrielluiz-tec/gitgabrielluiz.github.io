@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="pai">pai
+        <div id="primeiroFilho">brother1</div>
+        <div id="elementoOndeVoceEsta">eu aqui
+          <div id="primeiroFilhoDoFilho">1child</div>
+          <div id="segundoEUltimoFilhoDoFilho">2child</div>
+        </div>
+        <div id="terceiroFilho">brother3</div>
+        <div id="quartoEUltimoFilho">brother4</div>
+      </div>
+
+<script>
+
+console.log(
+      //document.querySelector("#elementoOndeVoceEsta")
+      //document.querySelector("#elementoOndeVoceEsta").parentNode
+      //document.querySelector("#elementoOndeVoceEsta").childNodes
+      //document.querySelector("#elementoOndeVoceEsta").firstChild
+      //document.querySelector("#elementoOndeVoceEsta").lastChild
+      //document.querySelector("#elementoOndeVoceEsta").previousSibling  
+      
+     // document.getElementsById("elementoOndeVoceEsta").parentNode.style.color = "red";
+      //cument.querySelector("#elementoOndeVoceEsta").parentElement.style.color = "red";
+
+)
+//ex parte1
+// document.getElementById("elementoOndeVoceEsta").parentNode.style.color = "red";
+// document.getElementById("primeiroFilhoDoFilho").innerHTML = "kkkkkkkkkkkk";
+// document.getElementById("pai").firstElementChild.innerHTML = "acessei primeiro filho";
+// document.getElementById("elementoOndeVoceEsta").previousElementSibling.innerHTML = "acessando irmao anterior"
+// document.getElementById("elementoOndeVoceEsta").nextElementSibling.innerHTML = "acessando irmao posterior"
+// document.getElementById("pai").childNodes[5].innerHTML = "acessando terceiro filho a partir do pai"
+
+//ex parte2
+let p = document.createElement("p")
+p.innerHTML = "versa"
+document.getElementById("pai").appendChild(p);
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
