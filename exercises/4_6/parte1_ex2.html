@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <label>Square this number:
+        <input type="number" id="square-input" size="2">
+    </label>
+    <button id="square-button">Calculate</button>
+    <br><br>
+
+    <label>Half this number:
+        <input type="number" id="half-input" size="2">
+    </label>
+    <button id="half-button">Calculate</button>
+    <br><br>
+
+    <label>
+        Fraction:
+        <input type="number" id="percent1-input" size="2">
+    </label>
+    <label>
+        Whole:
+        <input type="number" id="percent2-input" size="2">
+    </label>
+    <button id="percent-button">Calculate</button>
+    <br><br>
+
+    <label>Calculate area of circle with radius:
+        <input type="number" id="area-input" size="2">
+    </label>
+    <button id="area-button">Calculate</button>
+    <br><br>
+    <div id="solution"></div>
+
+
+    <script>
+        const solutionOut = document.querySelector('#solution');
+
+        //square
+        var buttonSquare = document.querySelector('#square-button');
+        var inputSquare = document.querySelector('#square-input');
+
+        var squareValor;
+        //half
+        var buttonHalf = document.querySelector("#half-button");
+        var inputHalf = document.querySelector("#half-input");
+        var valorHalf = inputHalf.value;
+
+        buttonSquare.addEventListener('click', squareF);
+        buttonHalf.addEventListener('click', halfF);
+
+
+        console.log(squareValor);
+
+
+
+
+
+        function squareF() {
+            squareValor = inputSquare.value;
+            console.log(squareValor);
+            solutionOut.innerHTML = squareValor * squareValor;
+        }
+        function halfF() {
+            valorHalf = inputHalf.value;
+            solutionOut.innerHTML = valorHalf / 2;
+        }
+
+        var areaBtn = document.querySelector("#area-button");
+        areaBtn.addEventListener('click', function(num1){
+            var input1 = document.querySelector("#area-input");
+            var resultado = input1.value * 2;
+            solutionOut.innerHTML = resultado;
+
+        });
+
+    function percentOf(num1, num2) {
+        var percent = (num1 / num2) * 100;
+        console.log(num1 + ' is ' + percent + '% of ' + num2);
+        return percent;
+    }
+
+    var percentButton = document.getElementById("percent-button");
+    percentButton.addEventListener("click", function () {
+        var num1 = document.getElementById("percent1-input").value;
+        var num2 = document.getElementById("percent2-input").value;
+        document.getElementById("solution").innerHTML = percentOf(num1, num2);
+    });
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
