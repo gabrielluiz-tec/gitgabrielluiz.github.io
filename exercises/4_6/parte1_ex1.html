@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title></title>
+ </head>
+ <body>
+ 
+ <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+<script>
+let botaoLib = document.querySelector('#lib-button');
+var input1 = document.querySelector('#noun');
+let input2 = document.querySelector('#adjective');
+let input3 = document.querySelector('#person');
+var vetorLib = [];
+botaoLib.addEventListener('click', madMax);
+function madMax(){
+    
+    vetorLib[0] = input1.value;
+    vetorLib[1] = input2.value;
+    vetorLib[2] = input3.value;
+    console.log(vetorLib[0] + " " + vetorLib[1] + " " + vetorLib[2]);
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML = vetorLib[0] + " " + vetorLib[1] + " " + vetorLib[2];
+    document.body.appendChild(newDiv);
+}
+
+
+</script> 
+</body>
+</html>

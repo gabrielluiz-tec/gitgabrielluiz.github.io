@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ <body>
+  
+  <img id="cat" style="position:absolute; width:296px;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+
+
+
+
+  <script>
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var Validador = true;
+        var tagCat = document.getElementsByTagName('img')[0];
+        tagCat.style.left = 0;
+        var myVar = setInterval(myTimer, 50);
+        
+        
+        
+        
+        console.log(w);
+        
+
+
+            function myTimer() {
+                w = window.innerWidth;
+                h = window.innerHeight;
+                if (w >= Math.abs(parseInt(tagCat.style.left)) + 296 && Validador == true) {
+                    console.log("1");
+                    tagCat.style.left = parseInt(tagCat.style.left) + 30 + 'px';
+                } else if (Math.abs(parseInt(tagCat.style.left)) && Validador == true) {
+                    Validador = false;
+                    console.log('a');
+                    console.log(Validador);
+                    console.log(w);
+                    console.log(Math.abs(parseInt(tagCat.style.left)));
+                    console.log('-------');
+                }
+                if (30 <= Math.abs(parseInt(tagCat.style.left)) && Validador == false) {
+                    console.log('2');
+                    tagCat.style.left = parseInt(tagCat.style.left) - 30 + 'px';
+                }else if (Math.abs(parseInt(tagCat.style.left)) < 70 && Validador == false) {
+                    Validador = true;
+                    console.log('b');
+                    console.log(Validador);
+                    console.log(w);
+                    console.log(Math.abs(parseInt(tagCat.style.left)));
+                    console.log('-------');
+                }
+            //tagCat.style.left = "0px";
+        
+    // else{
+    //     Validador == true;
+    //     console.log('a');
+    //     console.log(Validador);
+    //     console.log(w);
+    //     console.log(Math.abs(parseInt(tagCat.style.left)));
+    //     console.log('-------');
+    // }
+} 
+    
+
+
+
+
+
+
+     console.log(tagCat.style.left);
+    // imgCat.innerWidth = imgCat.innerWidth + 5;
+    // console.log(GetAbsPosition('cat'));
+ // document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+
+    
+
+
+  </script>
+ </body>
+</html>
