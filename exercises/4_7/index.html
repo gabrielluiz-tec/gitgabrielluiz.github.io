@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="loader()">
+    <header>
+        <p>What <b>background</b> Color?
+            <button type="button" onclick="bgGreen()">Change to Green</button>
+            <button type="button" onclick="bgYellow()">Change to Yellow</button>
+            <button type="button" onclick="bgWhite()">Change to White</button>
+        </p>
+        <p>What <b>text</b> Color?
+            <button type="button" onclick="textBlack()">Change to Black</button>
+            <button type="button" onclick="textWhite()">Change to White</button>
+            <button type="button" onclick="textRed()">Change to Red</button>
+        </p>
+        <p>What <b>font</b> Size?
+            <button type="button" onclick="f8()">Change font to 8</button>
+            <button type="button" onclick="f12()">Change font to 12</button>
+            <button type="button" onclick="f16()">Change font to 16</button>
+        </p>
+        <p>What <b>line space</b>?
+            <button type="button" onclick="espaçamentoP()">Change to 10px</button>
+            <button type="button" onclick="espaçamentoM()">Change to 20px</button>
+            <button type="button" onclick="espaçamentoG()">Change to 30px</button>
+        </p>
+        <p>What <b>font-family</b>?
+            <button type="button" onclick="familyArial()">Arial</button>
+            <button type="button" onclick="familyTimes()">Times new Roman</button>
+            <button type="button" onclick="familyTahoma()">Tahoma</button>
+        </p>
+
+    </header>
+    <section>
+
+        <h1>What is Lorem Ipsum?</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+
+
+    <script>
+        function loader() {
+            document.body.style.backgroundColor = localStorage.getItem('bg');
+            document.body.style.color = localStorage.getItem('textColor');
+            document.body.style.fontSize = localStorage.getItem('fontSize');
+            document.body.style.lineHeight = localStorage.getItem('espaçamento');
+            document.body.style.fontFamily = localStorage.getItem('family');
+        }
+
+        //cor do fundo
+        function bgGreen() {
+            localStorage.setItem('bg', 'green');
+            document.body.style.backgroundColor = localStorage.getItem('bg');
+        }
+        function bgYellow() {
+            localStorage.setItem('bg', 'yellow');
+            document.body.style.backgroundColor = localStorage.getItem('bg');
+        }
+        function bgWhite() {
+            localStorage.setItem('bg', 'white');
+            document.body.style.backgroundColor = localStorage.getItem('bg');
+
+        }
+        //cor do texto
+        function textBlack() {
+            localStorage.setItem('textColor', 'black');
+            document.body.style.color = localStorage.getItem('textColor');
+        }
+        function textWhite() {
+            localStorage.setItem('textColor', 'white');
+            document.body.style.color = localStorage.getItem('textColor');
+        }
+        function textRed() {
+            localStorage.setItem('textColor', 'red');
+            document.body.style.color = localStorage.getItem('textColor');
+        }
+        //tamanho da fonte
+        function f8() {
+            localStorage.setItem('fontSize', '8px');
+            document.body.style.fontSize = localStorage.getItem('fontSize');
+        }
+        function f12() {
+            localStorage.setItem('fontSize', '12px');
+            document.body.style.fontSize = localStorage.getItem('fontSize');
+        }
+        function f16() {
+            localStorage.setItem('fontSize', '16px');
+            document.body.style.fontSize = localStorage.getItem('fontSize');
+        }
+        //Espaçamento entre as linhas do texto;
+        function espaçamentoP() {
+            localStorage.setItem('espaçamento', '10px');
+            document.body.style.lineHeight = localStorage.getItem('espaçamento');
+        }
+        function espaçamentoM() {
+            localStorage.setItem('espaçamento', '20px');
+            document.body.style.lineHeight = localStorage.getItem('espaçamento');
+        }
+        function espaçamentoG() {
+            localStorage.setItem('espaçamento', '30px');
+            document.body.style.lineHeight = localStorage.getItem('espaçamento');
+        }
+        //Tipo da fonte (Font family). 
+        function familyArial() {
+            localStorage.setItem('family', 'Arial');
+            document.body.style.fontFamily = localStorage.getItem('family');
+        }
+        function familyTimes() {
+            localStorage.setItem('family', 'Times');
+            document.body.style.fontFamily = localStorage.getItem('family');
+        }
+        function familyTahoma() {
+            localStorage.setItem('family', 'Tahoma');
+            document.body.style.fontFamily = localStorage.getItem('family');
+        }
+
+
+
+        console.log(localStorage.length);
+        localStorage.setItem('firstname', 'Gabriel');
+        localStorage.setItem('lastname', 'Luiz');
+        console.log(localStorage.getItem('lastname'));
+        console.log(localStorage.length);
+
+
+
+
+    </script>
+</body>
+
+</html>
